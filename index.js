@@ -80,6 +80,10 @@ app.delete("/api/tasks/:id", async (req, res) => {
   }
 });
 
+app.get("/", async (req, res) => {
+  res.send("Welcome to Todo");
+});
+
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
